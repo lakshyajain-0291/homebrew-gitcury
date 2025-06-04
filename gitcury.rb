@@ -5,21 +5,21 @@
 class Gitcury < Formula
   desc "AI-Powered Git Automation CLI tool"
   homepage "https://github.com/lakshyajain-0291/gitcury"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.4.0/gitcury_1.4.0_darwin_amd64.tar.gz"
-      sha256 "33ae25c4a64eb63805dc3e29aecf4a9735e2ef7293b89c03cff488431a4fd333"
+      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.5.0/gitcury_1.5.0_darwin_amd64.tar.gz"
+      sha256 "6b6270a8c7e952cc0865a7503dbf0d7a4b616ca1487a6d32438274572d4ef4b6"
 
       def install
         bin.install "gitcury"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.4.0/gitcury_1.4.0_darwin_arm64.tar.gz"
-      sha256 "349d464f3eff55783278a0a65197d2b0007d8c582e8746b9bf8d3b51f69ec8aa"
+      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.5.0/gitcury_1.5.0_darwin_arm64.tar.gz"
+      sha256 "0ad6901b705b3f0c9e3ee1be63e97ddbcd4ef468abac0119bbd5c92eefe8e4d3"
 
       def install
         bin.install "gitcury"
@@ -29,15 +29,15 @@ class Gitcury < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.4.0/gitcury_1.4.0_linux_amd64.tar.gz"
-      sha256 "751d8d6ac13c8cf3a062d21ebc76ceda095d071b9cd5fe693a5330fd29fe96e5"
+      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.5.0/gitcury_1.5.0_linux_amd64.tar.gz"
+      sha256 "5b77fd7fcb1cd2aaa6c6134dced0ef640396262e0d872540fa6ee68bf8433921"
       def install
         bin.install "gitcury"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.4.0/gitcury_1.4.0_linux_arm64.tar.gz"
-      sha256 "50a4965eaeffd687708a0e67935d7ecdbc37f29942cc5376aa98e3d3ea4a120d"
+      url "https://github.com/lakshyajain-0291/gitcury/releases/download/v1.5.0/gitcury_1.5.0_linux_arm64.tar.gz"
+      sha256 "728537a51b24c5c15cdb9956e42aa23bbbf26016fc2552f605150e0fd41267a6"
       def install
         bin.install "gitcury"
       end
